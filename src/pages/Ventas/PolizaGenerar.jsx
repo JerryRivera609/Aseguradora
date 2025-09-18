@@ -48,7 +48,15 @@ export default function PolizaGenerar() {
      <Breadcrumb items={breadcrumbItems} />
       <PasosRegistro paso={1} />
 
-
+        <div className="bg-container h-full border-1 w-full border-border md:p-2 rounded-2xl grid grid-rows-[5rem_1fr_3rem]">
+        <PasoVehiculo data={{}} onChange={() => {}} />
+        <StepButtons
+          onPrevious={() => {}}
+          onNext={() => {}}
+          isFirstStep={false}
+          isLastStep={false}
+        />
+      </div>
 
     </div>
   );
