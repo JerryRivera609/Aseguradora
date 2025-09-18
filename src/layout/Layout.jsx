@@ -13,7 +13,7 @@ export default function Layout() {
       const isDark = document.documentElement.classList.contains("dark")
       const fondo = isDark
         ? "bg-[url('/pruebanoche.jpg')] bg-cover bg-center bg-no-repeat"
-        : "bg-[url('/fondo2.png')] bg-cover bg-center bg-no-repeat"
+        : "bg-[url('/pexels-stywo-1261728.jpg')] bg-cover bg-center bg-no-repeat"
       setImagenFondo(fondo)
     }
     checkDarkMode()

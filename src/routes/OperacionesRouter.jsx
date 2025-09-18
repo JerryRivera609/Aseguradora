@@ -5,7 +5,6 @@ import ActualizarPolizas from '../pages/Operaciones/ActualizarPolizas';
 import VerificarPolizas from '../pages/Operaciones/VerificarPolizas';
 import SiniestrosSeg from '../pages/Operaciones/SiniestrosSeg';
 import OperacionesGrafico from '../pages/Operaciones/OperacionesGrafico';
-import PlanillasPolizas from '../pages/Operaciones/PlanillasPolizas';
 import { useAuth } from '../pages/Login/AuthContext'
 import { RouteRoles, hasAny } from '../data/roles'
 
@@ -21,7 +20,6 @@ export default function OperacionesRouter() {
     { path: 'verificar',  element: <VerificarPolizas/>,   required: rp.cargacsv },
     { path: 'siniestros', element: <SiniestrosSeg/>,      required: rp.siniestros },
     { path: 'graficos',   element: <OperacionesGrafico/>, required: rp.graficos },
-    { path: 'planillas',  element: <PlanillasPolizas/>,   required: rp.planillas },
   ];
   
   const primeraRuta=OP_ROUTES.find(r => hasAny(roles, r.required))?.path;

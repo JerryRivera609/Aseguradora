@@ -37,7 +37,7 @@ function Login() {
     return (
         <>
             <div className="h-screen">
-                <div className="h-full inset-0 flex justify-center items-center bg-[url('/fondo2.jpg')] bg-cover bg-no-repeat bg-center text-foreground flex-col">
+                <div className="h-full inset-0 flex justify-center items-center bg-[url('/pexels-stywo-1261728.jpg')] bg-cover bg-no-repeat bg-center text-foreground flex-col">
                     <div className="flex flex-col bg-container/80 backdrop-blur-md rounded-[40px] py-12 px-10 shadow-2xl w-[380px] md:w-[420px]">
 
                         <div className="flex flex-col items-center gap-4 mb-6">

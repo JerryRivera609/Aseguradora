@@ -97,7 +97,7 @@ export const AuthProvider = ({ children }) => {
             <>
                 <div className="fixed w-full h-full flex justify-center items-center">
                     {/* capa de fondo con blur */}
-                    <div className="absolute inset-0 bg-[url(/fondo2.jpg)] bg-cover blur-sm"></div>
+                    <div className="absolute inset-0 bg-[url(/pexels-stywo-1261728.jpg)] bg-cover blur-sm"></div>
 
                     {/* contenido sin blur */}
                     <div className="relative w-40 text-primary">
