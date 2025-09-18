@@ -45,6 +45,8 @@ export default function PolizaGenerar() {
           </div>
         </div>
       </div>
+     <Breadcrumb items={breadcrumbItems} />
+      <PasosRegistro paso={1} />
 
 
 
