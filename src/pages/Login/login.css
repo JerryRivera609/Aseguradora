@@ -1,0 +1,38 @@
+.custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.25rem; /* tamaño */
+    height: 1.25rem;
+    border: 2px solid #ccc;
+    border-radius: 0.25rem;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+  }
+
+  /* Estilo cuando está seleccionado */
+  .custom-checkbox:checked {
+    background-color: #f97316; /* naranja */
+    border-color: #f97316;
+  }
+
+  /* Dibujar el check blanco */
+  .custom-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  /* Cambiar texto cuando el checkbox esté seleccionado */
+  .custom-checkbox:checked + span {
+    color: #f97316; /* texto naranja */
+    text-decoration: underline; /* subrayado */
+    font-weight: 600;
+  }
