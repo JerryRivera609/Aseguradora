@@ -57,7 +57,22 @@ export default function PolizaGenerar() {
           isLastStep={false}
         />
       </div>
-
+          {showModal && (
+        <div className="fixed grid place-items-center left-0 top-0 z-50 bg-[rgba(0,0,0,0.36)] h-full w-full select-none">
+          <div className="w-200 h-100 bg-container grid place-items-center grid-rows-[125px_200px_75px] rounded-xl">
+            <MdErrorOutline className="text-8xl" />
+            <div className="border-t-1 border-b-1 border-disabled h-full w-full grid place-items-center px-3">
+              <span>Mensaje de alerta</span>
+            </div>
+            <div
+              className="w-full h-full rounded-b-xl bg-disabled grid place-items-center transition-all duration-300 ease-out hover:bg-primary text-primary hover:text-primary-light hover:cursor-pointer"
+              onClick={() => setShowModal(false)} // ?? ahora cierra
+            >
+              <span>Cerrar</span>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
