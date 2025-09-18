@@ -4,6 +4,7 @@ import ControlVencimiento from '../pages/Operaciones/ControlVencimiento';
 import ActualizarPolizas from '../pages/Operaciones/ActualizarPolizas';
 import VerificarPolizas from '../pages/Operaciones/VerificarPolizas';
 import SiniestrosSeg from '../pages/Operaciones/SiniestrosSeg';
+import RemesasLista from '../pages/Operaciones/RemesasLista';
 import OperacionesGrafico from '../pages/Operaciones/OperacionesGrafico';
 import { useAuth } from '../pages/Login/AuthContext'
 import { RouteRoles, hasAny } from '../data/roles'
@@ -14,13 +15,15 @@ export default function OperacionesRouter() {
   const rp= RouteRoles.operaciones;
   
   const OP_ROUTES = [
-    { path: 'lista',      element: <OperacionesLista/>,   required: rp.listapolizas },
-    { path: 'control',    element: <ControlVencimiento/>, required: rp.vencimiento },
-    { path: 'csv',        element: <ActualizarPolizas/>,  required: rp.cargacsv },
-    { path: 'verificar',  element: <VerificarPolizas/>,   required: rp.cargacsv },
-    { path: 'siniestros', element: <SiniestrosSeg/>,      required: rp.siniestros },
-    { path: 'graficos',   element: <OperacionesGrafico/>, required: rp.graficos },
-  ];
+  { path: 'lista',      element: <OperacionesLista/>,   required: rp.listapolizas },
+  { path: 'remesas',    element: <RemesasLista/>,       required: rp.listapolizas }, // 👈 agregado
+  { path: 'control',    element: <ControlVencimiento/>, required: rp.vencimiento },
+  { path: 'csv',        element: <ActualizarPolizas/>,  required: rp.cargacsv },
+  { path: 'verificar',  element: <VerificarPolizas/>,   required: rp.cargacsv },
+  { path: 'siniestros', element: <SiniestrosSeg/>,      required: rp.siniestros },
+  { path: 'graficos',   element: <OperacionesGrafico/>, required: rp.graficos },
+];
+
   
   const primeraRuta=OP_ROUTES.find(r => hasAny(roles, r.required))?.path;
   return (

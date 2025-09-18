@@ -11,15 +11,8 @@ export default function OperacionesLista() {
   const [pageMostrar, setPageMostrar] = useState(1);
 
   useEffect(() => {
-    // 🔹 Si usas import directo:
     setSoats(registros);
 
-    // 🔹 Si prefieres fetch, mueve el json a /public y descomenta esto:
-    /*
-    fetch("/registros_ventas.json")
-      .then(res => res.json())
-      .then(data => setSoats(data));
-    */
   }, []);
 
   return (
