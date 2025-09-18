@@ -94,4 +94,21 @@ export default function PasoVehiculo({ data, onChange }) {
   }, [data]);
   //-----------------------//
 
+   //------IMAGENES-----------
+  const imgGrupo = grupo ? tiposYUsosCompletos[grupo].imagen : "";
+  const imgIncog = "/vehiculo.png"
+
+  const categoriaLetra = categoriaNombre ? categoriaNombre[0] : null;
+  const placasDisponibles = categoriaLetra ? placas[categoriaLetra] || [] : [];
+
+  const placaSeleccionada = uso ? placasDisponibles.find((p) => p.uso === uso): null;
+  const placaIncog = "/placaincog.png";
+  const placaimg = placaSeleccionada ? placaSeleccionada.img : placaIncog;
+  //POSITIVA--------------//
+  const [formMarcas,setFormMarcas]=useState({
+    nombre_clase: "",
+    nombre_marca: "",
+    nombre_modelo: "",
+  })
+
 }
