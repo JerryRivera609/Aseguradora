@@ -77,7 +77,6 @@ export default function OperacionesLista() {
 
   return (
     <div className="p-4 w-full">
-      {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h2 className="flex items-center gap-2 text-xl font-bold">
           <IoPricetagSharp /> SOAT Vendidos
