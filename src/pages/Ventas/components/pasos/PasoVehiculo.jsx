@@ -47,4 +47,14 @@ export default function PasoVehiculo({ data, onChange }) {
   }, [data, departamentos, provincias, distritos]);
   //------------------------------------------//
 
+
+    //Tipos / Clases---------------------------//
+  const [grupo, setGrupo] = useState("");
+  const [subtipo, setSubtipo] = useState("");
+  const [uso,setUso] =useState("");
+  const [categoria, setCategoria]= useState("")
+  const [categoriaNombre, setCategoriaNombre]= useState("")
+  const grupos = Object.keys(tiposYUsosCompletos).map((g) => ({label: g,value: g,}));
+  const subtipos = grupo
+
 }
