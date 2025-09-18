@@ -57,4 +57,41 @@ export default function PasoVehiculo({ data, onChange }) {
   const grupos = Object.keys(tiposYUsosCompletos).map((g) => ({label: g,value: g,}));
   const subtipos = grupo
 
+
+    ? tiposYUsosCompletos[grupo].items.map((s) => ({
+      label: s.key,
+      value: s.key,
+      positiva: s.positiva,
+      mapfre: s.mapfre,
+    }))
+  : [];
+
+  const usos = grupo && subtipo
+  ? Object.keys(
+      tiposYUsosCompletos[grupo].items.find((s) => s.key === subtipo.label)?.usos || {}
+    ).map((u) => ({
+      label: u,
+      value: u,
+    }))
+  : [];
+  const categorias = grupo && subtipo
+  ? (tiposYUsosCompletos[grupo].items.find((s) => s.key === subtipo.label)?.categoria || []).map((c) => ({
+      label: c.cat,
+      value: c.idPosi,
+    }))
+  : [];
+
+  const seleccionado = tiposYUsosCompletos[grupo]?.items.find((s) => s.key === subtipo.label);
+  const equivalencias = uso 
+    ? seleccionado?.usos[uso] 
+    : null;
+
+  useEffect(() => {
+    if (data.grupo) setGrupo(data.grupo);
+    if (data.clase) setSubtipo(data.clase);
+    if (data.uso) setUso(data.uso);
+    if (data.categoria) setCategoria(data.categoriaID);
+  }, [data]);
+  //-----------------------//
+
 }
