@@ -28,4 +28,23 @@ export default function PasoVehiculo({ data, onChange }) {
   const provinciasFiltradas = provincias.filter(p => p.departamentoId === departamentoId);
   const distritosFiltrados = distritos.filter(d => d.provinciaId === provinciaId);
 
+  useEffect(() => {
+    if (data.departamento) {
+      const dep = departamentos.find(d => d.id === data.departamento)
+        || findByNombre(departamentos, data.departamento);
+      if (dep) setDepartamentoId(dep.id);
+    }
+    if (data.provincia) {
+      const prov = provincias.find(p => p.id === data.provincia)
+        || findByNombre(provincias, data.provincia);
+      if (prov) setProvinciaId(prov.id);
+    }
+    if (data.distrito) {
+      const dist = distritos.find(d => d.id === data.distrito)
+        || findByNombre(distritos, data.distrito);
+      if (dist) setDistritoId(dist.id);
+    }
+  }, [data, departamentos, provincias, distritos]);
+  //------------------------------------------//
+
 }
