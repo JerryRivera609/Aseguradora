@@ -4,6 +4,6 @@ export default function ActualizarPolizas() {
 
   
   return (
-    <h1>ACTILIZA POLIZAS</h1>
+    <h1> OPERCIONES ACTILIZA POLIZAS</h1>
   );
 }
