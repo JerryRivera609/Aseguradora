@@ -25,13 +25,6 @@ export default function PasoVehiculo({ data, onChange }) {
           <tr className="bg-gray-100">
             <th className="border px-4 py-2">Columna 1</th>
             <th className="border px-4 py-2">Columna 2</th>
-            <th className="border px-4 py-2">Columna 3</th>
-            <th className="border px-4 py-2">Columna 3</th>
-            <th className="border px-4 py-2">Columna 3</th>
-            <th className="border px-4 py-2">Columna 3</th>
-            <th className="border px-4 py-2">Columna 3</th>
-            <th className="border px-4 py-2">Columna 3</th>
-            <th className="border px-4 py-2">Columna 3</th>
           </tr>
         </thead>
         <tbody>
