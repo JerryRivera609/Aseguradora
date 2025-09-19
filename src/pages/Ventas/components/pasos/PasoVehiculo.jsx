@@ -21,4 +21,3 @@ export default function PasoVehiculo({ data, onChange }) {
     <h1>Hola mundo</h1>
   );
 }
-
