@@ -11,8 +11,8 @@ const steps = [
 ];
 
 export default function StepIndicator({ paso }) {
-
-      <div className="grid grid-cols-4 mb-5">
+  return (
+    <div className="grid grid-cols-4 mb-5">
       {steps.map((step, index) => {
         const stepNumber = index + 1;
         const isActive = paso === stepNumber;
@@ -41,4 +41,5 @@ export default function StepIndicator({ paso }) {
         );
       })}
     </div>
+  );
 }
