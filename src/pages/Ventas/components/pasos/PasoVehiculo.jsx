@@ -18,6 +18,12 @@ const findByNombre = (arr, nombre) => arr.find(x => eq(x.nombre, nombre));
 
 export default function PasoVehiculo({ data, onChange }) {
   return (
-    <h1>Hola mundo</h1>
+    <div>
+      <h1>Hola mundo</h1>
+      <table>
+        
+      </table>
+    </div>
+    
   );
 }
