@@ -43,7 +43,7 @@ function Login() {
                         <div className="flex flex-col items-center gap-4 mb-6">
                             {/* <img src={Logo} width={250} alt="" /> */}
                             <h1 className="text-3xl font-bold text-primary tracking-wide">Asegurado</h1>
-                            <p className="text-sm text-foreground-muted">Ingresa tus credenciales para continuar</p>
+                            <p className="text-sm text-foreground-muted">Ingrese sus credenciales para continuar</p>
                         </div>
 
                         <div className="p-2 rounded-2xl flex flex-col gap-6">
