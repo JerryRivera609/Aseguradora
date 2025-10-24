@@ -14,7 +14,7 @@ export default function PolizaGenerar() {
   const breadcrumbItems = [
     { to: "/dashboard", icon: <AiFillHome />, label: "" },
     { to: "/dashboard", label: "Ventas de SOAT" },
-    { to: "/ventas/generar", label: "Cotización de SOAT" },
+    { to: "/ventas/generar", label: "Cotización de SOAssT" },
   ];
 
 return (
