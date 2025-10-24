@@ -31,7 +31,7 @@ function MenuMain(){
                         <div className="border-foreground opacity-85 rounded-xl bg-container p-8 text-center  shadow-xl  flex flex-col items-center transition-all duration-500 group hover:text-container hover:bg-veransa hover:shadow-[-10px_10px_15px_rgba(0,0,0,0.4)] hover:scale-103">
                             <div className="flex flex-col justify-start items-center text-center w-full mb-4 ">
                                 <BsCashCoin className="text-7xl  transition-all duration-500 group-hover:text-container mb-4" />
-                                <h2 className="text-2xl font-inter font-bold">Venta de <br /> SOAT</h2>
+                                <h2 className="text-2xl font-inter font-bold">Ventas De <br /> SOAT</h2>
                             </div>
                             <button className="flex justify-center items-center gap-1 bg-disabled/60 rounded-full py-3 w-3/4 font-bold  hover:cursor-pointer">
                                 Ingresar
