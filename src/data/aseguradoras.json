@@ -9,7 +9,11 @@
     "nombre": "Mapfre",
     "logo": "/mapfre.svg"
   },
- 
+  {
+    "id": "3",
+    "nombre": "Rimac",
+    "logo": "/rimac.svg"
+  },
   {
     "id": "4",
     "nombre": "Interseguro",
