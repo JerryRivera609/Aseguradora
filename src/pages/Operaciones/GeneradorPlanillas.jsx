@@ -4,6 +4,6 @@ export function GeneradorPlanillas(){
     
 
     return(
-    <h1>OPERACIONES GENERANDO-- DE PLANILLAS</h1>
+    <h1>OPERACIONES GENERANDO DE PLANILLAS</h1>
     )
 }
