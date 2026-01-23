@@ -7,7 +7,7 @@ import DarkModeToggle from "./DarkMode";
 export default function Header({isDashboard}){
   const {user,logout}= useAuth();
      return (
-<header className="hidden md:block h-20 w-full bg-[#0C3F5E] z-10 top-0 left-0 shadow-md">
+<header className="hidden md:block h-20 w-full bg-gradient-to-r from-[#0C3F5E] to-[#072335] z-10 top-0 left-0 shadow-md border-b border-primary-hover/30">
   <div className="flex w-full py-4 px-30 border-primary justify-between">
     {/* <img src="/" alt="asd" className="w-30"/> */}
     <div className="flex items-center space-x-2 pr-6 text-white text-lg">
